@@ -1,0 +1,4 @@
+# Ignore raw and prepared data files
+2 Data/Original Data/
+2 Data/Prepped Data/
+*.csv
