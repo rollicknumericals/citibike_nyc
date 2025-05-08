@@ -19,9 +19,6 @@ os.system("pip list > deps.txt")
 st.set_page_config(page_title = 'CitiBike NYC Strategy Dashboard', layout='wide')
 st.title("CitiBike NYC Strategy Dashboard")
 
-with open("deps.txt") as f:
-    st.text(f.read())
-
 # Define side bar
 st.sidebar.title("Aspect Selector")
 page = st.sidebar.selectbox('Select an aspect of the analysis',
