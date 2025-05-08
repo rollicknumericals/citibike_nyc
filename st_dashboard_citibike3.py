@@ -11,11 +11,16 @@ from keplergl import KeplerGl
 from datetime import datetime as dt
 from numerize.numerize import numerize
 from PIL import Image
+import os
+os.system("pip list > deps.txt")
 
 ########################### Initial settings for the dashboard ##################################################################
 
 st.set_page_config(page_title = 'CitiBike NYC Strategy Dashboard', layout='wide')
 st.title("CitiBike NYC Strategy Dashboard")
+
+with open("deps.txt") as f:
+    st.text(f.read())
 
 # Define side bar
 st.sidebar.title("Aspect Selector")
