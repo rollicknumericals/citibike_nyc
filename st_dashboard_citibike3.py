@@ -11,6 +11,8 @@ from keplergl import KeplerGl
 from datetime import datetime as dt
 from numerize.numerize import numerize
 from PIL import Image
+import os
+os.system("pip list > deps.txt")
 
 ########################### Initial settings for the dashboard ##################################################################
 
